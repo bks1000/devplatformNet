@@ -18,6 +18,7 @@ namespace MvcApp
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            //登录路由器
             routes.MapRoute(
                 name: "Login",
                 url: "home/login"

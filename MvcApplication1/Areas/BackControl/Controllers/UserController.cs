@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MvcApp.Controllers.BackControl
+namespace MvcApp.Areas.BackControl.Controllers
 {
     [Authentication]
     public class UserController : Controller

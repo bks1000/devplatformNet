@@ -31,7 +31,8 @@ namespace MvcApp
 
         protected void Application_Start()
         {
-
+            //Asp.NET MVC3添加域（Areas）区分Admin域和用户域
+            //http://www.cnblogs.com/chtang/archive/2013/04/06/3002746.html
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);

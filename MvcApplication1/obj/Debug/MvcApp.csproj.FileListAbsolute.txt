@@ -2,6 +2,8 @@ F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\MvcApp.dll
 F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\MvcApp.pdb
 F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\Antlr3.Runtime.dll
 F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\Autofac.dll
+F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\Autofac.Integration.Mvc.dll
+F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\Autofac.Integration.Web.dll
 F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\Bo.dll
 F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\Common.dll
 F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\Dao.dll
@@ -33,6 +35,8 @@ F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\Dto.pdb
 F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\IBO.pdb
 F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\IDao.pdb
 F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\Autofac.xml
+F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\Autofac.Integration.Mvc.xml
+F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\Autofac.Integration.Web.xml
 F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\EntityFramework.xml
 F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\Newtonsoft.Json.xml
 F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\System.Net.Http.xml
@@ -62,7 +66,3 @@ F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\zh-Hans\System.Web.WebPages
 F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\obj\Debug\MvcApp.csprojResolveAssemblyReference.cache
 F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\obj\Debug\MvcApp.dll
 F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\obj\Debug\MvcApp.pdb
-F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\Autofac.Integration.Mvc.dll
-F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\Autofac.Integration.Web.dll
-F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\Autofac.Integration.Mvc.xml
-F:\HW\aspnetmvc4\MvcApplication1\MvcApplication1\bin\Autofac.Integration.Web.xml

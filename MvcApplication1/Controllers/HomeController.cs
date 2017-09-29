@@ -23,6 +23,7 @@ namespace MvcApp.Controllers
         public ActionResult Index()
         {
             List<roles> lst = rolesBo.QueryAllRoles();
+            ViewBag.lst = lst;
             return View(lst);
         }
 
