@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+
+<form id="login" method="post" action="/home/login?from=@Request.QueryString["from"]">
+    登录名：<input id="username" name="username" type="text" /><br />
+    密码：<input id="pwd" name="pwd" type="password"/>
+    <input type="submit" value="submit"/>
+</form>
+
+@section scripts1{
+    <script type="text/javascript">
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+    </script>
+}

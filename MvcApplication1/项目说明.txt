@@ -1,0 +1,18 @@
+﻿总体采用 ASP.NET MVC 4.0 + Mysql(可以改为sql server)
+以下两个框架性能都非常不错。
+IOC框架：Autofac    http://autofac.readthedocs.io/en/latest/getting-started/index.html
+ORM框架：Dapper     https://github.com/StackExchange/Dapper
+
+
+Autofac 与 MVC集成
+http://www.cnblogs.com/zgqys1980/archive/2012/08/22/2650932.html
+http://www.cnblogs.com/gossip/p/3643011.html   可行
+
+Controller通过构造函数注入Bo
+Bo不需要构造函数注入
+
+
+
+
+Dapper使用注意：
+由于Dapper ORM的操作实际上是对IDbConnection类的扩展，所有的方法都是该类的扩展方法。所以在使用前先实例化一个IDBConnection对象。
