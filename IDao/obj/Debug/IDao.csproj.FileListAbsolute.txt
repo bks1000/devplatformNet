@@ -1,7 +1,0 @@
-F:\HW\aspnetmvc4\MvcApplication1\IDao\bin\Debug\IDao.dll
-F:\HW\aspnetmvc4\MvcApplication1\IDao\bin\Debug\IDao.pdb
-F:\HW\aspnetmvc4\MvcApplication1\IDao\bin\Debug\Dto.dll
-F:\HW\aspnetmvc4\MvcApplication1\IDao\bin\Debug\Dto.pdb
-F:\HW\aspnetmvc4\MvcApplication1\IDao\obj\Debug\IDao.csprojResolveAssemblyReference.cache
-F:\HW\aspnetmvc4\MvcApplication1\IDao\obj\Debug\IDao.dll
-F:\HW\aspnetmvc4\MvcApplication1\IDao\obj\Debug\IDao.pdb

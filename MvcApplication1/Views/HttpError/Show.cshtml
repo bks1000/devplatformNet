@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Show";
+    Layout = "~/Views/Shared/Error.cshtml";
+}
+
+@Html.ActionLink("首页","Index","Home",new { area = "" }, null)
+@if (ViewBag.code == "404") { 
+    <div>404</div>
+}
+@if (ViewBag.code == "500") { 
+    <div>500</div>
+}

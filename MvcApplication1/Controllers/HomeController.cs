@@ -3,28 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Common;
 using Dto;
 using IBO;
 
 namespace MvcApp.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        private IRolesBo rolesBo { get; set; }
-
-        public HomeController(IRolesBo bo)
-        {
-            rolesBo = bo;
-        }
-
+        
         //
         // GET: /Home/
 
         public ActionResult Index()
         {
-            List<roles> lst = rolesBo.QueryAllRoles();
-            ViewBag.lst = lst;
-            return View(lst);
+            return View();
         }
 
         public ActionResult Login()

@@ -1,4 +1,0 @@
-F:\HW\aspnetmvc4\MvcApplication1\Common\bin\Debug\Common.dll
-F:\HW\aspnetmvc4\MvcApplication1\Common\bin\Debug\Common.pdb
-F:\HW\aspnetmvc4\MvcApplication1\Common\obj\Debug\Common.dll
-F:\HW\aspnetmvc4\MvcApplication1\Common\obj\Debug\Common.pdb

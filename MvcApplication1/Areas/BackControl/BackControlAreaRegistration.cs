@@ -17,7 +17,8 @@ namespace MvcApp.Areas.BackControl
             context.MapRoute(
                 "BackControl_default",
                 "sys/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                new { action = "Index", id = UrlParameter.Optional },
+                namespaces: new[] { "MvcApp.Areas.BackControl.Controllers" } 
             );
         }
     }

@@ -1,4 +1,0 @@
-F:\HW\aspnetmvc4\MvcApplication1\Dto\bin\Debug\Dto.dll
-F:\HW\aspnetmvc4\MvcApplication1\Dto\bin\Debug\Dto.pdb
-F:\HW\aspnetmvc4\MvcApplication1\Dto\obj\Debug\Dto.dll
-F:\HW\aspnetmvc4\MvcApplication1\Dto\obj\Debug\Dto.pdb

@@ -1,7 +1,0 @@
-F:\HW\aspnetmvc4\MvcApplication1\IBO\bin\Debug\IBO.dll
-F:\HW\aspnetmvc4\MvcApplication1\IBO\bin\Debug\IBO.pdb
-F:\HW\aspnetmvc4\MvcApplication1\IBO\bin\Debug\Dto.dll
-F:\HW\aspnetmvc4\MvcApplication1\IBO\bin\Debug\Dto.pdb
-F:\HW\aspnetmvc4\MvcApplication1\IBO\obj\Debug\IBO.csprojResolveAssemblyReference.cache
-F:\HW\aspnetmvc4\MvcApplication1\IBO\obj\Debug\IBO.dll
-F:\HW\aspnetmvc4\MvcApplication1\IBO\obj\Debug\IBO.pdb

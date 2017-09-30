@@ -1,6 +1,31 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "RolesIndex";
     //Layout = "~/Areas/BackControl/Views/Shared/_Layoutbc.cshtml";
 }
 
 <h2>roles Index</h2>
+
+<table class="table table-hover">
+    <thead class="thead-inverse">
+        <tr>
+            <td>
+                角色名称
+            </td>
+            <td>
+                管理员
+            </td>
+        </tr>
+    </thead>
+@foreach (Dto.roles role in ViewBag.lst) { 
+    
+    <tr>
+        <td>
+            @role.rname
+        </td>
+        <td>
+            @(role.isadmin == "1" ? "是" : "不是")
+        </td>
+    </tr>
+}
+
+</table>

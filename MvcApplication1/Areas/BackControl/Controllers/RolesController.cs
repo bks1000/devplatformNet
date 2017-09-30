@@ -3,16 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Common;
+using Dto;
+using IBO;
 
 namespace MvcApp.Areas.BackControl.Controllers
 {
-    public class RolesController : Controller
+    
+    public class RolesController : BaseController
     {
+        private IRolesBo rolesBo { get; set; }
+
+        public RolesController(IRolesBo bo)
+        {
+            rolesBo = bo;
+        }
         //
         // GET: /Roles/
 
         public ActionResult Index()
         {
+            List<roles> lst = rolesBo.QueryAllRoles();
+            ViewBag.lst = lst;
             return View();
         }
 
