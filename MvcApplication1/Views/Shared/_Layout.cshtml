@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="旅游 国内游 周边游 一日游 境外游" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/bootstrap/css")
     @Styles.Render("~/Content/css")
@@ -10,8 +11,9 @@
     @RenderSection("scripts1", required: false)
 </head>
 <body>
+    @Html.Partial("~/Views/Shared/PartHeader.cshtml");
     @RenderBody()
-
+    @Html.Partial("~/Views/Shared/PartFooter.cshtml");
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts2", required: false)

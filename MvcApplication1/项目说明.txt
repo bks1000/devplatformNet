@@ -19,6 +19,8 @@ bootstrap帮助文档
 http://v3.bootcss.com/components/#list-group
 
 
+asp.net mvc 部分视图 
+http://www.cnblogs.com/SharpL/p/4641886.html
 
 
 Dapper使用注意：

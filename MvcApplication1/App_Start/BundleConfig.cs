@@ -16,7 +16,13 @@ namespace MvcApp
                         "~/Scripts/jquery-ui-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                    "~/Scripts/bootstrap.js"));
+                    "~/Scripts/bootstrap.js",
+                    "~/Scripts/easing.js",
+                    "~/Scripts/jquery.magnific-popup.js",
+                    "~/Scripts/jquery.swipebox.js",
+                    "~/Scripts/modernizr.custom.53451.js",
+                    "~/Scripts/move-top.js",
+                    "~/Scripts/responsiveslides.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.unobtrusive*",
@@ -31,7 +37,12 @@ namespace MvcApp
 
             bundles.Add(new StyleBundle("~/Content/bootstrap/css").Include(
                 "~/Content/bootstrap/bootstrap.css",
-                "~/Content/bootstrap/bootstrap-theme.css"));
+                "~/Content/bootstrap/bootstrap-theme.css",
+                "~/Content/magnific-popup.css",
+                "~/Content/popup-box.css",
+                "~/Content/style.css",
+                "~/Content/swipebox.css",
+                "~/Content/responsiveslides.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",

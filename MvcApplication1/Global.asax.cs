@@ -72,5 +72,41 @@ namespace MvcApp
               .Where(t => t.Name.EndsWith("Dao"))
               .AsImplementedInterfaces();
         }
+
+        /// <summary>
+        /// 异常处理
+        /// </summary>
+        protected void Application_EndRequest()
+        {
+            var statusCode = Context.Response.StatusCode;
+            var routingData = Context.Request.RequestContext.RouteData;
+            if (statusCode == 404 || statusCode == 500)
+            {
+                Response.Clear();
+                var area = routingData.DataTokens["area"];
+                if (area == "BackControl")
+                {
+                    if (statusCode == 404)
+                    {
+                        Response.RedirectToRoute("BackControl_default", new { controller = "BackError", action = "NotFound" });
+                    }
+                    else
+                    {
+                        Response.RedirectToRoute("BackControl_default", new { controller = "BackError", action = "Error" });
+                    }
+                }
+                else
+                {
+                    if (statusCode == 404)
+                    {
+                        Response.RedirectToRoute("Default", new { controller = "HttpError", action = "NotFound", id = UrlParameter.Optional });
+                    }
+                    else
+                    {
+                        Response.RedirectToRoute("Default", new { controller = "HttpError", action = "Error", id = UrlParameter.Optional });
+                    }
+                }
+            }
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Mvc;
+using Common;
 
 namespace MvcApp
 {
@@ -7,7 +8,8 @@ namespace MvcApp
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            //filters.Add(new HandleErrorAttribute());
+            filters.Add(new ErrorAttribute());
             //filters.Add(new AuthenticationAttribute());//全局过滤器
         }
     }

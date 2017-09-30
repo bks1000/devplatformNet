@@ -3,20 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Common;
 
-namespace MvcApp.Controllers
+namespace MvcApp.Areas.BackControl.Controllers
 {
-    public class HttpErrorController : Controller
+    public class BackErrorController : Controller
     {
         //
-        // GET: /HttpError/
-
-        public ActionResult Show(string id)
-        {
-            ViewBag.code = id;
-            return View();
-        }
+        // GET: /BackControl/BackError/
 
         public ActionResult NotFound()
         {
@@ -27,7 +20,6 @@ namespace MvcApp.Controllers
         {
             return View();
         }
-
         
     }
 }

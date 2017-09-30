@@ -7,9 +7,9 @@ using System.Web.Mvc;
 
 namespace Common
 {
-    class ErrorAttribute : FilterAttribute, IExceptionFilter
+    public class ErrorAttribute : HandleErrorAttribute
     {
-        public void OnException(ExceptionContext filterContext)
+        public new void OnException(ExceptionContext filterContext)
         {
             Exception exception = filterContext.Exception;
             if (filterContext.ExceptionHandled == true)
@@ -28,15 +28,17 @@ namespace Common
             {
                 //filterContext.HttpContext.Response.StatusCode = 404;
                 //filterContext.HttpContext.Response.Write("错误的请求路径");
-                //filterContext.HttpContext.Response.WriteFile("~/HttpError/404.html");
-                filterContext.Result = new RedirectResult("/HttpError/Show/404");//跳转至错误提示页面 
+                //filterContext.HttpContext.Response.WriteFile("~/Views/HttpError/404.html");
+                
+                filterContext.Result = new RedirectResult("/HttpError/NotFound");//跳转至错误提示页面 
             }
             else
             {
                 //filterContext.HttpContext.Response.StatusCode = 500;
                 //filterContext.HttpContext.Response.Write("服务器内部错误");
-                //filterContext.HttpContext.Response.WriteFile("~/HttpError/500.html");
-                filterContext.Result = new RedirectResult("/HttpError/Show/500");//跳转至错误提示页面 
+                //filterContext.HttpContext.Response.WriteFile("~/Views/HttpError/500.html");
+
+                filterContext.Result = new RedirectResult("/HttpError/Error");//跳转至错误提示页面 
             }
             /*---------------------------------------------------------
              * 这里可进行相关自定义业务处理，比如日志记录等
