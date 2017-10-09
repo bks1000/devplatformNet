@@ -20,6 +20,12 @@ namespace MvcApp.Areas.BackControl
                 new { action = "Index", id = UrlParameter.Optional },
                 namespaces: new[] { "MvcApp.Areas.BackControl.Controllers" } 
             );
+
+            //后台登录路由器
+            context.MapRoute(
+                name: "SysLogin",
+                url: "sys/home/login"
+            );
         }
     }
 }

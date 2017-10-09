@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<h2>sys Login</h2>
+<form id="login" method="post" action="/sys/home/login?from=@Request.QueryString["from"]">
+    登录名：<input id="username" name="username" type="text" /><br />
+    密码：<input id="pwd" name="pwd" type="password"/>
+    <input type="submit" value="submit"/>
+</form>

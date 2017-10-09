@@ -53,6 +53,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="RouteDebugger, Version=2.1.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\routedebugger.2.1.5\lib\net40\RouteDebugger.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -140,6 +144,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\BackControl\BackControlAreaRegistration.cs" />
     <Compile Include="Areas\BackControl\Controllers\BackErrorController.cs" />
+    <Compile Include="Areas\BackControl\Controllers\HomeController.cs" />
     <Compile Include="Areas\BackControl\Controllers\RolesController.cs" />
     <Compile Include="Areas\BackControl\Controllers\UserController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -279,6 +284,8 @@
     <Content Include="Areas\BackControl\Views\_ViewStart.cshtml" />
     <Content Include="Areas\BackControl\Views\BackError\NotFound.cshtml" />
     <Content Include="Areas\BackControl\Views\BackError\Error.cshtml" />
+    <Content Include="Areas\BackControl\Views\Home\Login.cshtml" />
+    <Content Include="Areas\BackControl\Views\Home\Index.cshtml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />

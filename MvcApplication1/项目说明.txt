@@ -25,3 +25,10 @@ http://www.cnblogs.com/SharpL/p/4641886.html
 
 Dapper使用注意：
 由于Dapper ORM的操作实际上是对IDbConnection类的扩展，所有的方法都是该类的扩展方法。所以在使用前先实例化一个IDBConnection对象。
+
+
+
+------------------------------------------------------------------------
+Asp.Net MVC路由调试工具-RouteDebugger
+http://www.cnblogs.com/cunlau/p/4198717.html
+<add key="RouteDebugger:Enabled" value="true" />

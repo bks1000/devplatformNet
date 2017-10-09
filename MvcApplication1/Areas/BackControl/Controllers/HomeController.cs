@@ -3,22 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Common;
 
 namespace MvcApp.Areas.BackControl.Controllers
 {
-    [BackAuthentication]
-    public class UserController : BaseController
+    public class HomeController : Controller
     {
         //
-        // GET: /User/
+        // GET: /BackControl/Home/
+
         public ActionResult Index()
         {
             return View();
         }
 
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Login(FormCollection collection)
+        {
+            Session.Add(Common.Constant.BackSessionName, collection.GetValue("username").AttemptedValue);
+            //return Redirect(Request.QueryString["from"]);//应采用这种方式
+            return RedirectToAction("Index", "Home");
+        }
+
         //
-        // GET: /User/Details/5
+        // GET: /BackControl/Home/Details/5
 
         public ActionResult Details(int id)
         {
@@ -26,7 +38,7 @@ namespace MvcApp.Areas.BackControl.Controllers
         }
 
         //
-        // GET: /User/Create
+        // GET: /BackControl/Home/Create
 
         public ActionResult Create()
         {
@@ -34,7 +46,7 @@ namespace MvcApp.Areas.BackControl.Controllers
         }
 
         //
-        // POST: /User/Create
+        // POST: /BackControl/Home/Create
 
         [HttpPost]
         public ActionResult Create(FormCollection collection)
@@ -52,7 +64,7 @@ namespace MvcApp.Areas.BackControl.Controllers
         }
 
         //
-        // GET: /User/Edit/5
+        // GET: /BackControl/Home/Edit/5
 
         public ActionResult Edit(int id)
         {
@@ -60,7 +72,7 @@ namespace MvcApp.Areas.BackControl.Controllers
         }
 
         //
-        // POST: /User/Edit/5
+        // POST: /BackControl/Home/Edit/5
 
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
@@ -78,7 +90,7 @@ namespace MvcApp.Areas.BackControl.Controllers
         }
 
         //
-        // GET: /User/Delete/5
+        // GET: /BackControl/Home/Delete/5
 
         public ActionResult Delete(int id)
         {
@@ -86,7 +98,7 @@ namespace MvcApp.Areas.BackControl.Controllers
         }
 
         //
-        // POST: /User/Delete/5
+        // POST: /BackControl/Home/Delete/5
 
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)

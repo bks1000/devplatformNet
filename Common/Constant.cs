@@ -12,8 +12,13 @@ namespace Common
     public class Constant
     {
         /// <summary>
-        /// 登录存储的Session名称
+        /// 前台登录存储的Session名称
         /// </summary>
         public static readonly string SessionName = "username";
+
+        /// <summary>
+        /// 后台登录存储的Session名称
+        /// </summary>
+        public static readonly string BackSessionName = "OP";
     }
 }

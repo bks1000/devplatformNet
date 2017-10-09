@@ -9,15 +9,15 @@ using System.Web.Routing;
 namespace MvcApp
 {
     /// <summary>
-    /// 前台登录过滤器
+    /// 后台登录过滤器
     /// 可以用于Class OR Method
     /// </summary>
-    public class AuthenticationAttribute : System.Web.Mvc.ActionFilterAttribute
+    public class BackAuthenticationAttribute : System.Web.Mvc.ActionFilterAttribute
     {
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
             if (filterContext.HttpContext.Session[Common.Constant.SessionName] == null)
-                filterContext.Result = new RedirectToRouteResult("Login", new RouteValueDictionary { { "from", filterContext.RequestContext.HttpContext.Request.Url.ToString() } });
+                filterContext.Result = new RedirectToRouteResult("SysLogin", new RouteValueDictionary { { "from", filterContext.RequestContext.HttpContext.Request.Url.ToString() } });
 
             base.OnActionExecuting(filterContext);
         }
